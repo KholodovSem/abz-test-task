@@ -1,0 +1,16 @@
+.header__button-list {
+  margin-left: auto;
+}
+
+.header__button {
+  @extend %button;
+
+  &:first-child {
+    @extend %button-users;
+    margin-right: 10px;
+  }
+
+  &:last-child {
+    @extend %button-signup;
+  }
+}

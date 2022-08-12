@@ -1,8 +1,12 @@
+import {Header, Main} from './components/index'
+
 function App() {
-  return (
-    <div>
-    </div>
-  );
+    return (
+        <div>
+            <Header/>
+            <Main/>
+        </div>
+    );
 }
 
 export default App;
