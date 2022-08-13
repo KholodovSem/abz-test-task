@@ -8,30 +8,53 @@
 
   background-color: $white-color;
   border-radius: 10px;
-
-  &:not(:last-child){
-    margin-bottom: 20px;
   }
 
-  .card__image{
-    margin-bottom: 20px;
+.card__item-list {
+  margin: 0;
 
-    border-radius: 50%;
-  }
+  text-align: center;
+}
 
-  .card__item-list{
-    margin: 0;
 
-    text-align: center;
-  }
+.card__image {
+  margin-bottom: 20px;
 
-  .card__item {
+  border-radius: 50%;
+}
+
+.card__item {
+  &:not(:last-child) {
     margin-bottom: 10px;
+  }
 
-    &:first-child{
-      margin-bottom: 20px;
-    }
+
+  max-width: 288px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  @media screen and (min-width: 768px){
+    max-width: 304px;
+  }
+
+  @media screen and (min-width: 1024px){
+    max-width: 242px;
+  }
+
+  &:first-child {
+    margin-bottom: 20px;
   }
 }
 
-//.card-item
+.card-item-contact {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card__item-text {
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

@@ -19,7 +19,7 @@ const CardSection = () => {
     }, []);
 
     useEffect(() => {
-        if(page === 1){
+        if (page === 1) {
             return;
         }
 
@@ -39,15 +39,17 @@ const CardSection = () => {
     return (
         <section className="card-section">
             <div className="container">
-            <h2 className="card-section__title">Working with GET request</h2>
-            {users.map((user) => (
-                <ProfileCard {...user} key={user.id}/>
-            ))}
-            {page <= maxPage ?
-                <button
-                    onClick={handleClick}
-                    className="card-section__button"
-                >Show more</button>: null}
+                <h2 className="card-section__title">Working with GET request</h2>
+                <div className="card-container">
+                    {users.map((user) => (
+                        <ProfileCard {...user} key={user.id}/>
+                    ))}
+                </div>
+                {page <= maxPage ?
+                    <button
+                        onClick={handleClick}
+                        className="card-section__button"
+                    >Show more</button> : null}
             </div>
         </section>
     );

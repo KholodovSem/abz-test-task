@@ -8,8 +8,8 @@ const ProfileCard = ({photo, name, position, email, phone}) => {
             <ul className="card__item-list">
                 <li className="card__item">{name}</li>
                 <li className="card__item">{position}</li>
-                <li className="card__item"><a>{email}</a></li>
-                <li className="card__item">{phone}</li>
+                <li className="card__item"><a href={`mailto:${email}`} className="card-item-contact">{email}</a></li>
+                <li className="card__item"><a href={`tel:${phone}`} className="card-item-contact">{phone}</a></li>
             </ul>
         </div>
     );

@@ -1,4 +1,4 @@
-import {CardSection, Header, Hero} from './components/index'
+import {CardSection, Header, Hero, Form} from './components/index'
 
 function App() {
     return (
@@ -6,6 +6,7 @@ function App() {
             <Header/>
             <Hero/>
             <CardSection/>
+            <Form />
         </div>
     );
 }
