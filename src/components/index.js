@@ -1,3 +1,3 @@
 export {default as Header} from './header/header';
-export {default as Main} from './main/Main';
-export {default as Container} from './common/Container';
+export {default as Hero} from './hero-section/Hero';
+export {default as CardSection} from './card-section/CardSection';

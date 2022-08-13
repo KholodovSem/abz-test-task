@@ -1,5 +1,6 @@
-@import "./global/body";
+@import './utils/mixins';
 @import './common/variable';
+@import "./global/body";
 @import './common/container';
 @import './common/buttons';
 @import './components/header/header';
@@ -8,3 +9,6 @@
 @import './components/hero/hero';
 @import './components/hero/text-content';
 @import './components/hero/button';
+@import './components/card-section/card-section';
+@import './components/card-section/card';
+@import './components/card-section/button';

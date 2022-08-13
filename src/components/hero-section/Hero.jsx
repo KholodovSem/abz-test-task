@@ -1,17 +1,15 @@
-import {Container} from '../index';
-
-const Main = () => {
+const Hero = () => {
     return (
         <section className="hero-section">
-            <Container>
+            <div className="container container-header-section">
                 <h1 className="hero__title">Test assignment for front-end developer</h1>
                 <p className="hero__text">
                     What defines a good front-end developer is one that has skilled knowledge of HTML, CSS, JS with a vast understanding of User design thinking as they'll be building web interfaces with accessibility in mind. They should also be excited to learn, as the world of Front-End Development keeps evolving.
                 </p>
                 <button className="hero__button">Sign up</button>
-            </Container>
+            </div>
         </section>
     );
 };
 
-export default Main;
+export default Hero;

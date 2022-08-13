@@ -1,10 +1,11 @@
-import {Header, Main} from './components/index'
+import {CardSection, Header, Hero} from './components/index'
 
 function App() {
     return (
         <div>
             <Header/>
-            <Main/>
+            <Hero/>
+            <CardSection/>
         </div>
     );
 }

@@ -1,0 +1,37 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+
+  background-color: $white-color;
+  border-radius: 10px;
+
+  &:not(:last-child){
+    margin-bottom: 20px;
+  }
+
+  .card__image{
+    margin-bottom: 20px;
+
+    border-radius: 50%;
+  }
+
+  .card__item-list{
+    margin: 0;
+
+    text-align: center;
+  }
+
+  .card__item {
+    margin-bottom: 10px;
+
+    &:first-child{
+      margin-bottom: 20px;
+    }
+  }
+}
+
+//.card-item

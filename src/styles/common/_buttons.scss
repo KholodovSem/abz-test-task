@@ -6,6 +6,13 @@
   line-height: 1.62;
 
   background-color: $primary-color;
+  transition: background-color 250ms linear 0ms;
+
+  cursor: pointer;
+
+&:hover {
+  background-color: $button-hover-color;
+}
 }
 
 %button-users {
@@ -13,5 +20,9 @@
 }
 
 %button-signup {
-  padding: 4px 22px 4px 23px;
+padding: 4px 22px 4px 23px;
+}
+
+%button-show-more{
+padding: 4px 18px 4px 19px;
 }
