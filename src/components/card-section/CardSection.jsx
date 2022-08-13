@@ -2,11 +2,13 @@ import {useEffect, useState} from "react";
 import ProfileCard from "./ProfileCard";
 import {fetchUsers} from "../../helpers/FetchUsers";
 import '../../styles/index.scss';
+import axios from "axios";
 
 const CardSection = () => {
     const [users, setUsers] = useState([]);
     const [page, setPage] = useState(1);
     const [maxPage, setMaxPage] = useState(null);
+
 
     useEffect(() => {
         fetchUsers(page).then(({data}) => {
@@ -15,7 +17,7 @@ const CardSection = () => {
 
             setUsers(sortedUsers);
             setMaxPage(data.total_pages);
-        })
+        });
     }, []);
 
     useEffect(() => {

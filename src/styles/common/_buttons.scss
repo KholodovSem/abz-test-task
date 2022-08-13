@@ -10,9 +10,9 @@
 
   cursor: pointer;
 
-&:hover {
-  background-color: $button-hover-color;
-}
+  &:hover {
+    background-color: $button-hover-color;
+  }
 }
 
 %button-users {
@@ -20,9 +20,19 @@
 }
 
 %button-signup {
-padding: 4px 22px 4px 23px;
+  padding: 4px 22px 4px 23px;
 }
 
-%button-show-more{
-padding: 4px 18px 4px 19px;
+%button-signup-disabled {
+  padding: 4px 22px 4px 23px;
+  background-color: $button-disabled-color;
+  color: $white-color;
+
+  &:hover {
+    background-color: $button-disabled-color;
+  }
+}
+
+%button-show-more {
+  padding: 4px 18px 4px 19px;
 }
