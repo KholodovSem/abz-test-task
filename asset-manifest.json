@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/abz-test-task/static/css/main.2f89743d.css",
+    "main.js": "/abz-test-task/static/js/main.9ca18848.js",
+    "static/media/hero-large-2x.jpg": "/abz-test-task/static/media/hero-large-2x.3402e2e82fa2118f4bdc.jpg",
+    "static/media/hero-desc-2x.jpg": "/abz-test-task/static/media/hero-desc-2x.c72bcbce4e0539a8c02e.jpg",
+    "static/media/hero-tab-2x.jpg": "/abz-test-task/static/media/hero-tab-2x.72b8740532be642d8d9f.jpg",
+    "static/media/hero-large-1x.jpg": "/abz-test-task/static/media/hero-large-1x.17e582f519b7c37ab113.jpg",
+    "static/media/hero-mobile-2x.jpg": "/abz-test-task/static/media/hero-mobile-2x.d44f1ce9a8c68b6454d2.jpg",
+    "static/media/hero-desc-1x.jpg": "/abz-test-task/static/media/hero-desc-1x.1835683b305e16ae5f16.jpg",
+    "static/media/hero-tab-1x.jpg": "/abz-test-task/static/media/hero-tab-1x.b9b70ba6d4ed0709baec.jpg",
+    "static/media/hero-mobile-1x.jpg": "/abz-test-task/static/media/hero-mobile-1x.7b19d7e5dfcf277cd35a.jpg",
+    "static/media/file-input-mobile.svg": "/abz-test-task/static/media/file-input-mobile.0a3ce38e0625737df004.svg",
+    "static/media/file-input.svg": "/abz-test-task/static/media/file-input.e4cebb28cc577f0ef9a9.svg",
+    "static/media/header-logo.svg": "/abz-test-task/static/media/header-logo.51687ed0f1d26da6528d99513d6ce679.svg",
+    "static/media/header-logo-text.svg": "/abz-test-task/static/media/header-logo-text.bfd0c701a6c69e9b85fd8854e1328061.svg",
+    "index.html": "/abz-test-task/index.html",
+    "static/media/checked-checkbox.svg": "/abz-test-task/static/media/checked-checkbox.116a20546aded640b219.svg",
+    "static/media/not-cheked-chekbox.svg": "/abz-test-task/static/media/not-cheked-chekbox.62208ceb1111ba17b594.svg",
+    "main.2f89743d.css.map": "/abz-test-task/static/css/main.2f89743d.css.map",
+    "main.9ca18848.js.map": "/abz-test-task/static/js/main.9ca18848.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2f89743d.css",
+    "static/js/main.9ca18848.js"
+  ]
+}
