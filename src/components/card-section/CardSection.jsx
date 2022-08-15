@@ -1,17 +1,16 @@
-import {useEffect, useState} from "react";
+import {useEffect, useRef, useState} from "react";
 import ProfileCard from "./ProfileCard";
-import {fetchUsers} from "../../helpers/FetchUsers";
+import {getUsers} from "../../helpers/GetUsers";
 import '../../styles/index.scss';
 import axios from "axios";
 
-const CardSection = () => {
+const CardSection = ({newUser, page, handleClick}) => {
     const [users, setUsers] = useState([]);
-    const [page, setPage] = useState(1);
     const [maxPage, setMaxPage] = useState(null);
 
 
     useEffect(() => {
-        fetchUsers(page).then(({data}) => {
+        getUsers(page).then(({data}) => {
             const users = data.users;
             const sortedUsers = users.sort((a, b) => a - b);
 
@@ -25,7 +24,7 @@ const CardSection = () => {
             return;
         }
 
-        fetchUsers(page).then(({data}) => {
+        getUsers(page).then(({data}) => {
             const users = data.users;
             const sortedUsers = users.sort((a, b) => a - b);
 
@@ -33,16 +32,23 @@ const CardSection = () => {
         })
     }, [page])
 
+    useEffect(() => {
+        if(newUser){
+            getUsers(page).then(({data}) => {
+                const users = data.users;
+                const sortedUsers = users.sort((a, b) => a - b);
 
-    const handleClick = () => {
-        setPage((prevState) => prevState + 1)
-    }
+                setUsers(sortedUsers);
+                setMaxPage(data.total_pages);
+            });
+        }
+    }, [newUser])
 
     return (
         <section className="card-section">
             <div className="container">
                 <h2 className="card-section__title">Working with GET request</h2>
-                <div className="card-container">
+                <div className="card-container" id="users">
                     {users.map((user) => (
                         <ProfileCard {...user} key={user.id}/>
                     ))}

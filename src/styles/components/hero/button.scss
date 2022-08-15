@@ -3,6 +3,9 @@
   @extend %button-signup;
 
   display: block;
+
+  max-width: 100px;
+
   margin-left: auto;
   margin-right: auto;
 }
