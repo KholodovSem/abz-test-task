@@ -1,8 +1,7 @@
-import {useEffect, useRef, useState} from "react";
+import {useEffect,  useState} from "react";
 import ProfileCard from "./ProfileCard";
 import {getUsers} from "../../helpers/GetUsers";
 import '../../styles/index.scss';
-import axios from "axios";
 
 const CardSection = ({newUser, page, handleClick}) => {
     const [users, setUsers] = useState([]);

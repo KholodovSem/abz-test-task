@@ -1,5 +1,5 @@
 import {CardSection, Header, Hero, Form} from './components/index'
-import {useEffect, useState, useRef} from "react";
+import {useEffect, useState} from "react";
 import axios from "axios";
 
 function App() {
